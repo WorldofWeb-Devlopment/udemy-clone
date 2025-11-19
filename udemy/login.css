@@ -5,199 +5,80 @@
 body{
   font-family: "Inter", sans-serif;
 }
-
 nav{
   display: flex;
-  flex-direction: column;
   width: 100%;
-}
-img{
-width: 120px;
+  height: 100%;
+  justify-content: space-evenly; 
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 }
-.dropdown1{
-  display: none;
+img{
+  width: 110px;
+  margin: 10px;
+}
+.dropdown{
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: absolute;
-  left: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  top: 100%;
-  width: 200px;
-  border-radius: 10px;
-  z-index: 1;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.dropdown1 p{
-   display: flex;
-  color: black;
+  position: relative;
+  width: 100px;
   padding: 10px;
-  font-size: 13px;
-  margin-left:10px;
 }
-.dropdown1 a{
+.dropdownlist{
+  background-color: white;
+  position: absolute;
+  padding: 10px 20px 10px 20px;
+  width: 300px;
+  top: 55px;
+  left: -10px;
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.dropdownlist a{
   display: flex;
   text-decoration: none;
   color: black;
   padding: 10px;
-  margin-left:10px;
-  }
-.why{
+  margin-left: 0px;
+}
+.dropdownlist p{
   display: flex;
-  padding: 20px;
-margin: 20px;
-position: relative;
-}
-.why:hover .dropdown1{
-  display: flex;
-  background-color: white;
-}
-.dropdown1 a:hover{
- color: blue;
-  
-}
-.dropdown1 hr{
-  width: 100%;
-  border: 0;
-  border-top: 1px solid #ccc; /* visible line */
-  margin: 10px 0;
-}
-.why h4{
+  text-decoration: none;
+  color: black;
   padding: 10px;
+  margin-left: 0px;
 }
-.searchbar{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  height: 100px;
-  }
-  input{
-    width: 30%;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid black;
-  }
- input:focus {
-    border-color: #A435F0;
-    outline: none;
+.dropdown:hover .dropdownlist
+{
+  display: block;
 }
-
-.searchlist {
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-padding: 20px;
-margin-top: 10px;
-display: flex;
-justify-content: space-evenly;
-
-  }
-  a{
-    text-decoration: none;
-    font-size: 13px;
-    text-align: center;
-    color: black;
-  }
-  .searchlist a:hover{
-    color: blue;
-  }
- 
-  p:hover{
-    color: blue;
-    cursor: pointer;
-  }
-  .dropdown1 a{
-display: flex;
-flex-direction: column;
-  }
- .btn1{
-   background-color: transparent;
-   border: 1px solid #A435F0;
-   padding: 8px;
-   font-weight: bold;
-   color: #8c16db;
-   font-size: 15px;
-   width: 80px;
- } 
- .btn2{
-    background-color: #8c16db;
-    color: white;
-    padding: 8px;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    width: 80px;
-    
- }
- .btn2:hover{
-    background-color: #6815a0;
-    cursor: pointer;
- }
- .btn1{
- cursor: pointer;
- }
-.dr1{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    padding: 10px;
-    
-}
-.dr1 p{
+.dropdown h4{
+  font-weight: normal;
   padding: 10px;
-}
-
-.drsub{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    margin:auto;
-    text-align: center;
-    background-color: white;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: none;
-    flex-direction: column;
-    top: 60px;
-    
-    left: 30px;
-    
-    
-}
-.drsub p{
-    padding: 10px;
-}
-.btn3{
-background-color: #A435F0;
-color: white;
-display: flex;
-justify-content: center;
-padding: 10px 10px;
-width: 200px;
-font-size: 15px;
-margin: auto;
-
-}
-.dr1:hover .drsub{
-    display: block;
-}
-.para1{
-    color: black;
-    font-weight: bold;
-}
-.btn3:hover{
-    background-color: #6815a0;
-    color: white;
-}
-.para1:hover{
-    color: black;
-}
-.btn1:hover{
-    background-color: #9e9e9e48;
-    
 }
 .icon{
-   
+  display: flex;
+  width: 500px;
+  position: relative;
 }
+input{
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  text-indent: 20px; 
+  border-radius: 50px;
+  border: 1px solid black;
+  outline: none;
+}
+.icon i{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: gray;
+  pointer-events: none;
+}
+/* input::placeholder{
+  padding: 10px 10px 10px 15px;
+} */
