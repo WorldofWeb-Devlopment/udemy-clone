@@ -199,5 +199,23 @@ margin: auto;
     
 }
 .icon{
-   
+  display: flex;
+  width: 500px;
+  position: relative;
+}
+input{
+  width: 500px;
+  padding: 10px 10px 10px 20px;
+  text-indent: 20px; 
+  border-radius: 50px;
+  border: 1px solid black;
+
+  outline: none;
+}
+.icon i{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: gray;
+  pointer-events: none;
 }
