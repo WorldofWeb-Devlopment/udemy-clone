@@ -54,7 +54,7 @@ width: 120px;
   position: relative;
 }
 
-input{
+#input1{
   display: flex;
   width: 600px;
   padding: 10px 10px 10px 20px;
@@ -65,7 +65,7 @@ input{
 }  
 .icon i{
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 15px;
   color: gray;
   pointer-events: none;
@@ -108,7 +108,7 @@ position: relative;
   height: 100px;
   }
 
- input:focus {
+ #input1:focus {
     border-color: #A435F0;
     outline: none;
 }
@@ -357,13 +357,20 @@ font-size: 15px;
   padding: 10px;
   margin: 10px;
 }
-input:nth-child(2){
+#input2{
   border-radius: 0;
   width: 400px;
   padding: 20px;
   transition: all 0.5s;
+  outline: none;
+  border: 1px solid black;
 
 }
+#input2:focus {
+    border-color: #A435F0;
+    outline: none;
+}
+
 /* input:hover::placeholder{
   transform: translateY(-10px);
   font-size: 12px;
