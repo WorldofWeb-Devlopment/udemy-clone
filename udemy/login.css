@@ -53,6 +53,7 @@ width: 120px;
   width:600px;
   position: relative;
 }
+
 input{
   display: flex;
   width: 600px;
@@ -61,11 +62,11 @@ input{
   border-radius: 50px;
   border: 1px solid black;
   outline: none;
-}
+}  
 .icon i{
   position: absolute;
-  top: 12px;
-  left: 10px;
+  top: 20px;
+  left: 15px;
   color: gray;
   pointer-events: none;
 }
@@ -331,12 +332,86 @@ font-size: 15px;
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 40px 10px 10px 10px;
 }
 .submain img{
   width: 800px;
+  background-color: transparent;
 }
 .submain p{
   font-weight: bold;
-  font-size:50px ;
+  font-size:30px ;
+  width: 400px;
+  text-align: center;
+}
+.submain1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.submain p ,
+.submain input{
+  padding: 10px;
+  margin: 10px;
+}
+input:nth-child(2){
+  border-radius: 0;
+  width: 400px;
+  padding: 20px;
+  transition: all 0.5s;
+
+}
+/* input:hover::placeholder{
+  transform: translateY(-10px);
+  font-size: 12px;
+} */
+.submain1 a{
+  background-color: #8c16db;
+  color: white;
+  width: 400px;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.submain a:hover{
+  background-color:#6815a0 ;
+}
+h5{
+  padding: 10px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+.btn6{
+  display: flex;
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+button:first-child{
+  background-color: #4285F4;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 10px;
+}
+button:nth-child(2){
+    background-color: #1877F2;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 10px;
+}
+button:last-child{
+      background-color: #1877F2;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 10px;
 }
