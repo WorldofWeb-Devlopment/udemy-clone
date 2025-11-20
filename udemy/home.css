@@ -44,6 +44,27 @@ width: 120px;
   padding: 10px;
   margin-left:10px;
   }
+  .icon{
+  display: flex;
+  width:600px;
+  position: relative;
+}
+input{
+  display: flex;
+  width: 600px;
+  padding: 10px 10px 10px 20px;
+  text-indent: 20px; 
+  border-radius: 50px;
+  border: 1px solid black;
+  outline: none;
+}
+.icon i{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: gray;
+  pointer-events: none;
+}
 .why{
   display: flex;
   padding: 20px;
@@ -74,12 +95,7 @@ position: relative;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   height: 100px;
   }
-  input{
-    width: 30%;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid black;
-  }
+
  input:focus {
     border-color: #A435F0;
     outline: none;
