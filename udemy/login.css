@@ -27,22 +27,26 @@ width: 120px;
   top: 100%;
   width: 200px;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 999;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+/* Dropdown paragraph */
 .dropdown1 p{
-   display: flex;
+   display: block;
   color: black;
   padding: 10px;
   font-size: 13px;
-  margin-left:10px;
+  width: 90%;
+  text-align: start;
 }
+/* dropdown la erukra anchor tag */
 .dropdown1 a{
-  display: flex;
+  display: block;
   text-decoration: none;
   color: black;
   padding: 10px;
-  margin-left:10px;
+  width: 90%;
+  text-align: start;
   }
   .icon{
   display: flex;
@@ -65,6 +69,7 @@ input{
   color: gray;
   pointer-events: none;
 }
+
 .why{
   display: flex;
   padding: 20px;
@@ -77,6 +82,12 @@ position: relative;
 }
 .dropdown1 a:hover{
  color: blue;
+ background-color: rgb(141, 141, 240);
+
+}
+.dropdown1 p:hover{
+ color: blue;
+ background-color: rgb(141, 141, 240);
   
 }
 .dropdown1 hr{
@@ -119,14 +130,10 @@ justify-content: space-evenly;
     color: blue;
   }
  
-  p:hover{
-    color: blue;
-    cursor: pointer;
-  }
-  .dropdown1 a{
+  /* .dropdown1 a{
 display: flex;
 flex-direction: column;
-  }
+  } */
  .btn1{
    background-color: transparent;
    border: 1px solid #A435F0;
@@ -183,6 +190,7 @@ flex-direction: column;
 .drsub p{
     padding: 10px;
 }
+/* hover effect of paragraph */
 .btn3{
 background-color: #A435F0;
 color: white;
@@ -268,4 +276,32 @@ font-size: 15px;
 }
 .txt1{
   display: flex;
+}
+/* item 1 */
+.item1{
+  position: relative;
+  width: 100%;
+}
+
+.submenu{
+  position: absolute;
+  top: 0;               /* item1 pakkathula thaan start aagum */
+  left: 200px;          /* side la varum */
+  width: 220px;
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  z-index: 999;
+}
+.submenu a{
+  text-align: center;
+}
+
+.item1:hover .submenu{
+    display: flex;
+    width: 100%;
+    
 }
