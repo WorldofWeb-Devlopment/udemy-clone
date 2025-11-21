@@ -18,7 +18,7 @@ width: 120px;
 .dropdown1{
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
   left: 0;
@@ -369,6 +369,28 @@ font-size: 15px;
 #input2:focus {
     border-color: #A435F0;
     outline: none;
+}
+#input3{
+    border-radius: 0;
+  width: 400px;
+  padding: 20px;
+  transition: all 0.5s;
+  outline: none;
+  border: 1px solid black;
+
+}
+#input:focus{
+  border-color: #A435F0;
+  outline: none;
+}
+#box{
+  width: 400px;
+  display: flex;
+  font-size: 13px;
+  text-align: start;
+  padding: 10px;
+  margin: 10px;
+  justify-content: flex-start;
 }
 
 /* input:hover::placeholder{
