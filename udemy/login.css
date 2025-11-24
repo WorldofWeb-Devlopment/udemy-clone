@@ -36,7 +36,7 @@ width: 120px;
   color: black;
   padding: 10px;
   font-size: 13px;
-  width: 90%;
+   width: 90%; 
   text-align: start;
 }
 /* dropdown la erukra anchor tag */
@@ -45,7 +45,7 @@ width: 120px;
   text-decoration: none;
   color: black;
   padding: 10px;
-  width: 90%;
+   width: 90%; 
   text-align: start;
   }
   .icon{
@@ -292,7 +292,7 @@ font-size: 15px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   border-radius: 4px;
-  z-index: 999;
+  /* z-index: 999; */
 }
 .submenu a{
   text-align: left;
@@ -303,9 +303,25 @@ font-size: 15px;
     width: 100%;
 }
 .item2{
-  position: relative;
-  width: 100%;
+   position: relative;
+  width: 100%; 
 }
+/* border style */
+/* .border1{
+  display: block;
+  align-items: center;
+  gap: 20px;
+}
+
+.border1::before,
+.border1::after{
+  content: " ";
+  border-bottom: 1px solid black;
+  flex: 1;
+  display: block;
+  margin-left: 10px;
+} */
+
 .submenu1{
    position: absolute;
   top: 0;               /* item1 pakkathula thaan start aagum */
@@ -319,10 +335,33 @@ font-size: 15px;
   border-radius: 4px;
   z-index: 999;
   padding: auto;
+ 
 }
 .item2:hover .submenu1{
   display: block;
 }
+/* item 3 */
+.item3{
+  position: relative;
+  width: 100%;
+}
+.submenu2{
+  position: absolute;
+  left: 200px;
+  background-color: white;
+  top: 0px;
+  padding: auto;
+  width: 200px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin: 10px 10px 10px 0;
+border-radius: 4px;
+display: none;
+}
+/* item3 hover effect */
+.item3:hover .submenu2{
+  display: block;
+}
+
 .main{
   display: flex;
   width: 100%;
@@ -356,6 +395,10 @@ font-size: 15px;
 .submain input{
   padding: 10px;
   margin: 10px;
+}
+.logo1{
+  font-weight: normal;
+  font-size: 10px;
 }
 #input2{
   border-radius: 0;
